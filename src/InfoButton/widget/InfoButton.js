@@ -61,6 +61,7 @@ define([
         _handleClick: function () {
             var messageString = "All these people are awesome: \n";
             messageString += "Conner\n";
+            messageString += "Joe\n";
             // TODO: Add your name here
             mx.ui.info(messageString, false);
         },
