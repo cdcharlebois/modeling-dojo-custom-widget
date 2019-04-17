@@ -56,11 +56,13 @@ define([
 
         _setupButton: function () {
             this.connect(this.buttonNode, "click", this._handleClick.bind(this))
+            this.buttonNode.innerText = this.translatableMessage;
         },
 
         _handleClick: function () {
             var messageString = "All these people are awesome: \n";
             messageString += "Conner\n";
+            messageString += "Eli\n";
             // TODO: Add your name here
             mx.ui.info(messageString, false);
         },
